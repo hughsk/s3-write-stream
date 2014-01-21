@@ -16,9 +16,6 @@ function factory(config) {
     , maxDelay: 10000
   }
 
-  var countIn = 0
-  var countOut = 0
-
   return function createStream(dest) {
     if (typeof dest === 'string') dest = {
         Key: dest
@@ -43,7 +40,6 @@ function factory(config) {
     var bo = backoff.fibonacci(boSettings)
     var lastErr
 
-    countIn += 1
 
     bo.failAfter(10)
     bo.on('backoff', function() {
