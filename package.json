@@ -1,0 +1,42 @@
+{
+  "name": "s3-write-stream",
+  "description": "Pipe data straight to an S3 key of your choice",
+  "version": "0.0.0",
+  "main": "index.js",
+  "browser": "index.js",
+  "scripts": {
+    "test": "node test | faucet"
+  },
+  "dependencies": {
+    "aws-sdk": "~2.0.0-rc8",
+    "through2": "~0.4.0",
+    "backoff": "~2.3.0",
+    "bl": "~0.7.0"
+  },
+  "devDependencies": {
+    "request": "~2.33.0",
+    "faucet": "0.0.0",
+    "tape": "~2.3.2",
+    "from": "~0.1.3"
+  },
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/s3-write-stream"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/s3-write-stream/issues"
+  },
+  "homepage": "https://github.com/hughsk/s3-write-stream",
+  "keywords": [
+    "s3",
+    "writeable",
+    "upload",
+    "streaming",
+    "multipart",
+    "backoff",
+    "retry",
+    "stream"
+  ]
+}
