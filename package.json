@@ -1,7 +1,7 @@
 {
   "name": "s3-write-stream",
   "description": "Pipe data straight to an S3 key of your choice",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "browser": "index.js",
   "scripts": {
